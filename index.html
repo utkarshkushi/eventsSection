@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        body {
+            background: url('./Main\ Page.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            margin: 20px 20px;
+        }
+
+        .event-para {
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+            background: linear-gradient(180deg, #706DFF 0%, rgba(236, 122, 224, 0.81) 20.31%, #15BFFD 58.85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .events-cards {
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card-head {
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+            background: linear-gradient(180deg, #706DFF 0%, rgba(236, 122, 224, 0.81) 20.31%, #15BFFD 58.85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .event-card {
+            background: rgba(0, 0, 0, 0.1);
+            box-shadow: 12px 12px 24px #1E1E1E;
+            border-radius: 43px;
+            border: 2px solid rgba(236, 122, 224, 0.);
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .event-sec {
+            margin: 20px 20px;
+        }
+
+        .event-des {
+            margin: 20px 30px;
+            padding: 20px 20px;
+            width: 366px;
+            /* height: 222px; */
+            background: rgba(240, 239, 239, 0.03);
+            border-radius: 39px;
+        }
+
+
+
+        .event-des-head {
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: center;
+
+            background: linear-gradient(180deg, #15BFFD 0%, rgba(236, 122, 224, 0.81) 28.65%, rgba(255, 255, 255, 0.81) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .event-des-para {
+
+
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+
+            text-align: left;
+
+            letter-spacing: 0.14em;
+
+            color: #FFFFFF;
+
+            opacity: 0.55;
+        }
+
+        .event-des-para-span {
+            text-decoration: underline;
+        }
+
+        .twitter-box {
+            width: 121px;
+            height: 35px;
+            border-radius: 25px;
+            background: rgba(217, 217, 217, 0.34);
+
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .twitter-logo {
+            display: block;
+            margin: auto;
+        }
+
+        .event-img {
+            /* background: url('./eec5544a-5b8c-4380-bb80-c11339065b94\ 1.png'); */
+            background: #1E1E1E;
+            z-index: 1;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            height: 223px;
+        }
+
+        .dm {
+
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        .date-box {
+
+            text-align: center;
+            position: relative;
+            top: 20px;
+            left: 330px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(180deg, rgba(176, 97, 252, 0.60), rgba(255, 255, 255, 0.6));
+
+            border-radius: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+
+
+        /* new style  */
+
+        .btn-box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .btn-box button {
+            display: block;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(236, 122, 224, 1);
+            border-radius: 25px;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            /* margin-right: 100px; */
+            background: linear-gradient(180deg, #706DFF 0%, rgba(236, 122, 224, 0.81) 20.31%, #15BFFD 58.85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            /* box-shadow: 12px 12px 24px #1E1E1E; */
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transition: all 0.6s;
+        }
+
+        
+        .past-btn{
+            box-shadow: 12px 12px 24px #1E1E1E;
+            opacity: 1;
+            filter: alpha(opacity = 100);
+        }
+
+        .upcoming-btn{
+            
+            opacity: 0.5;
+            filter: alpha(opacity = 50);
+        }
+
+        .event-cards{
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .upcoming-event-cards{
+            display: none;
+        }
+
+        @media screen and (max-width: 1000px){
+            .date-box{
+                left: 250px;
+            }
+            .event-des{
+                width: 250px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .event-cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+
+            .upcoming-event-cards{
+            display: none;
+            }
+            .btn-box button{
+                font-size: 18px;
+                line-height: 20px;
+            }
+            .btn-box {
+            display: flex;
+            justify-content: space-around;
+            }
+            .date-box{
+                left: 200px;
+            }
+
+            .event-des{
+                width: 210px;
+            }
+            .event-des-head{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .event-des-para{
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .event-cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            }
+
+            .upcoming-event-cards{
+            display: none;
+            }
+            .btn-box button{
+                font-size: 12px;
+                line-height: 15px;
+            }
+            .btn-box {
+            display: flex;
+            justify-content: space-around;
+            }
+            .date-box{
+                left: 120px;
+            }
+
+            .event-des{
+                width: 100px;
+            }
+            .event-des-head{
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .event-des-para{
+                font-size: 8px;
+                line-height: 10px;
+            }
+            .date-box{
+                width: 60px;
+                height: 60px;
+            }
+            .dm{
+                font-size: 12px;
+                line-height: 15px;
+            }
+            .twitter-box{
+                width: 100px;
+                height: 25px;
+            }
+            .twitter-logo{
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="events">
+        <div class="event-heading">
+            <h1 class="event-para">Events</h1>
+        </div>
+        <div class="mytabs">
+            <div class="btn-box">
+                <button onclick="openEventCards(0)" class="event-btn past-btn">Past Events</button>
+                <button onclick="openEventCards(1)" class="event-btn upcoming-btn">Upcoming Events</button>
+            </div>
+
+            <div class="event-cards past-event-cards">
+                <div class="past-events event-sec">
+    
+                    <div class="event-card">
+                        <div class="event-img">
+                            <div class="date-box">
+                                <div class="inner-date-box">
+                                    <p class="date dm">18</p>
+                                    <p class="month dm">Nov</p>
+                                </div>
+                            </div>
+                
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers Hangout</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+ developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="upcoming-events event-sec">
+                    
+                    <div class="event-card">
+                        <div class="event-img">
+                            <div class="date-box">
+                                <div class="inner-date-box">
+                                    <p class="date dm">18</p>
+                                    <p class="month dm">Nov</p>
+                                </div>
+                            </div>
+                
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers Hangout</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+ developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-cards upcoming-event-cards">
+                <div class="past-events event-sec">
+    
+                    <div class="event-card">
+                        <div class="event-img">
+                            <div class="date-box">
+                                <div class="inner-date-box">
+                                    <p class="date dm">18</p>
+                                    <p class="month dm">Nov</p>
+                                </div>
+                            </div>
+                
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+ developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="upcoming-events event-sec">
+                    
+                    <div class="event-card">
+                        <div class="event-img">
+                            <div class="date-box">
+                                <div class="inner-date-box">
+                                    <p class="date dm">18</p>
+                                    <p class="month dm">Nov</p>
+                                </div>
+                            </div>
+                
+                        </div>
+                        <div class="event-des">
+                            <h1 class="event-des-head">Move Developers</h1>
+                            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                                    class="event-des-para-span">#MoveIndia</span>event that was
+                                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+ developers &
+                                enthusiasts who attended the event.</h1>
+                            <div class="twitter-box">
+                                <img src="./Vector.png" alt="" class="twitter-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        let buttons = document.querySelectorAll('.event-btn')
+
+        let eventCards = document.querySelectorAll('.event-cards') 
+
+        function openEventCards(index){
+            buttons.forEach((node)=>{
+                node.style.boxShadow = "none";
+                node.style.opacity = "0.5";
+                node.style.filter = "alpha(opacity = 50)";
+
+            });
+            buttons[index].style.boxShadow = '12px 12px 24px #1E1E1E';
+            buttons[index].style.opacity = "1";
+            buttons[index].style.filter = "alpha(opacity = 100)";
+            eventCards.forEach((node)=>{
+                node.style.display = "none";
+            });
+            eventCards[index].style.display = "flex";
+            // eventCards[index].style. = "block";
+            // eventCards[index].style.display = "block";
+            
+
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- <div class="past-events event-sec">
+    
+    <div class="event-card">
+        <div class="event-img">
+            <div class="date-box">
+                <div class="inner-date-box">
+                    <p class="date dm">18</p>
+                    <p class="month dm">Nov</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="event-des">
+            <h1 class="event-des-head">Move Developers Hangout</h1>
+            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                    class="event-des-para-span">#MoveIndia</span>event that was
+                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+ developers &
+                enthusiasts who attended the event.</h1>
+            <div class="twitter-box">
+                <img src="./Vector.png" alt="" class="twitter-logo">
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="upcoming-events event-sec">
+    
+    <div class="event-card">
+        <div class="event-img">
+            <div class="date-box">
+                <div class="inner-date-box">
+                    <p class="date dm">18</p>
+                    <p class="month dm">Nov</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="event-des">
+            <h1 class="event-des-head">Move Developers Hangout</h1>
+            <h1 class="event-des-para">Here are the glimpses of the first ever <span
+                    class="event-des-para-span">#MoveIndia</span>event that was
+                held in partnership with <span class="event-des-para-span">@Aptos_Network</span>.
+                We proudly introduced <span class="event-des-para-span">#MoveLang</span> to 60+ developers &
+                enthusiasts who attended the event.</h1>
+            <div class="twitter-box">
+                <img src="./Vector.png" alt="" class="twitter-logo">
+            </div>
+        </div>
+    </div>
+</div> -->
